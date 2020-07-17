@@ -30,11 +30,22 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-1. Describe component state.
+React is a UI library that is used in various forms to create complex, rich user interfaces. 
+Whenever the data changes, React calls a new render method. As it grew, it expanded capabilities for building full web applications. Creative programmers discovered how React. js solves problems of better handling of dynamic data for faster response times.
+If the page has data that changes over time at high rates, for example, lots of people commenting on a post, likes being generated etc, then there is a requirement for DOM updates to be very fast and also reflect in other parts of the UI if they use the same data.
 
-1. Describe props.
+2. Describe component state.
 
-1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+State contains “private” information for the component to initialise, change, and use on it’s own. The State pattern simply says that you can say an object is in a certain state, and some of its behaviour changes accordingly. The responsibility of changing an object's state is left entirely up to the developer.
+That condition was based on our application’s state. When we forced the state of the application to change what appeared on the page reacted to that change.
+
+3. Describe props.
+
+Props is short for “properties and they contain information set by the parent component -although defaults can be set- and should not be changed. Props and state are similar in that they hold information relating to the component but they are different in one important way: props get passed to the component, similar to function parameters, whereas state is managed within the component, similar to variables declared within a function.
+
+4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+A side effect is anything that affects something outside the scope of the function being executed. Fetching data from an API, timers, logging, and manually manipulating the DOM are all examples of side effects. There are two categories of side effects in React components - those that don’t require cleanup and those that do require cleanup. We will discuss effects which require cleanup later in this module.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 

@@ -3,14 +3,17 @@ import axios from 'axios'
 import CharactersList from '../src/components/CharactersList'
 import './App.css';
 import Logo from './components/starwarslogo-removebg-preview.png'
+import Style from 'styled-components'
 
-// import SWlogo from './components/starwarslogo-removebg-preview.png'
-// import Style from 'styled-components'
-
-// const AppStyled = Style.div `
-//   color: yellow;
-//   border:1px solid red;
-// `
+const AppStyled = Style.div `
+  h1 {
+    color:black;
+    font-size: 50px;
+  }
+  #logo{
+    width: 382px;
+  }
+`
 
 const StarWarsAPI = 'https://swapi.dev/api/people'
 console.log(`Checking Data`,StarWarsAPI)
@@ -29,11 +32,11 @@ const App = () => {
   },[])
 
   return (
-    <div className="App">
-      <img src={Logo}alt='logo'/>
+    <AppStyled className="App">
+      <img id='logo' src={Logo}alt='logo'/>
       <h1 className="Header">Character List</h1>
       <CharactersList data={data}/>
-    </div>
+    </AppStyled>
   );
 }
 

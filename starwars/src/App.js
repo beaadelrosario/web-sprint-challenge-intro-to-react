@@ -2,8 +2,15 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import CharactersList from '../src/components/CharactersList'
 import './App.css';
+// import Style from 'styled-components'
+
+// const AppStyled = Style.div `
+//   color: yellow;
+//   border:1px solid red;
+// `
 
 const StarWarsAPI = 'https://swapi.dev/api/people'
+console.log(`Checking Data`,StarWarsAPI)
 
 const App = () => {
   const [data , setData] = useState([])

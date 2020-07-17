@@ -14,3 +14,4 @@ const CharactersList = (props) => {
     )}
 
 export default CharactersList
+

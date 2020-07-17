@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import CharactersList from '../src/components/CharactersList'
 import './App.css';
+import Logo from './components/starwarslogo-removebg-preview.png'
+
+// import SWlogo from './components/starwarslogo-removebg-preview.png'
 // import Style from 'styled-components'
 
 // const AppStyled = Style.div `
@@ -27,7 +30,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Star Wars Characters</h1>
+      <img src={Logo}alt='logo'/>
+      <h1 className="Header">Character List</h1>
       <CharactersList data={data}/>
     </div>
   );

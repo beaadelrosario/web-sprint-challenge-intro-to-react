@@ -3,9 +3,10 @@ import React from 'react'
 import Style from 'styled-components'
 
 const CharacterDiv = Style.div `
-    border: 2px solid red;
-    margin-left: 500px;
-    margin-right: 500px;
+    border: 2px solid black;
+    background:#BABCBB;
+    margin-left: 800px;
+    margin-right: 800px;
     margin-top: 50px;
     margin-bottom: 50px;
 
